@@ -1,39 +1,27 @@
-# Flask Login Website
+# Python Login Demos
 
-This folder contains the web version of the login security demo.
+This folder contains the two CLI versions of the login project:
 
-## Files
-
-- `app.py` - Flask application with vulnerable and secure routes
-- `templates/` - HTML templates for the site
+- `login_vulnerable.py` - intentionally insecure for learning
+- `login_secure.py` - fixed version with safer practices
 
 ## How to run
 
 From the project root:
 
 ```bash
-python website/app.py
+python python/login_vulnerable.py
+python python/login_secure.py
 ```
 
-Then open:
+## What to look for
 
-- `http://127.0.0.1:5000/` - home page
-- `http://127.0.0.1:5000/vulnerable` - insecure demo
-- `http://127.0.0.1:5000/secure` - secure demo
-
-## Demo details
-
-The vulnerable route shows:
+The vulnerable version demonstrates:
 
 - SQL injection
 - plain-text password storage
-- MD5 hashing
-- verbose error messages
-- sensitive logging
+- weak MD5 hashing
+- hardcoded secrets
+- verbose error leakage
 
-The secure route uses:
-
-- parameterized queries
-- bcrypt hashing
-- input validation
-- generic error handling
+The secure version fixes those issues with parameterized queries, bcrypt, environment-based config, validation, and safer error handling.
