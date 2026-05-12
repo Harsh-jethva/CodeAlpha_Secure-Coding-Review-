@@ -1,34 +1,7 @@
-2026-05-12 13:03:33  INFO      [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+2026-05-12 13:08:57  INFO      [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on http://127.0.0.1:5000
-2026-05-12 13:03:33  INFO      [33mPress CTRL+C to quit[0m
-2026-05-12 13:03:33  INFO       * Restarting with watchdog (windowsapi)
-2026-05-12 13:03:33  WARNING    * Debugger is active!
-2026-05-12 13:03:33  INFO       * Debugger PIN: 788-187-898
-2026-05-12 13:03:57  INFO      127.0.0.1 - - [12/May/2026 13:03:57] "GET / HTTP/1.1" 200 -
-2026-05-12 13:03:57  INFO      127.0.0.1 - - [12/May/2026 13:03:57] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-2026-05-12 13:04:03  INFO      127.0.0.1 - - [12/May/2026 13:04:03] "GET /vulnerable HTTP/1.1" 200 -
-2026-05-12 13:04:27  WARNING   Vulnerable login attempt user=admin password=passworld123 query=SELECT * FROM users WHERE username = 'admin' AND (password_plain = 'passworld123' OR password_md5 = 'ca35d11d4a538755c0b7be89255fdb56')
-2026-05-12 13:04:27  INFO      127.0.0.1 - - [12/May/2026 13:04:27] "POST /vulnerable HTTP/1.1" 200 -
-2026-05-12 13:04:32  INFO      127.0.0.1 - - [12/May/2026 13:04:32] "GET /vulnerable HTTP/1.1" 200 -
-2026-05-12 13:04:33  INFO      127.0.0.1 - - [12/May/2026 13:04:33] "GET /secure HTTP/1.1" 200 -
-2026-05-12 13:10:57  INFO      [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on http://127.0.0.1:5000
-2026-05-12 13:10:57  INFO      [33mPress CTRL+C to quit[0m
-2026-05-12 13:10:57  INFO       * Restarting with watchdog (windowsapi)
-2026-05-12 13:10:58  WARNING    * Debugger is active!
-2026-05-12 13:10:58  INFO       * Debugger PIN: 788-187-898
-2026-05-12 13:11:41  INFO      [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on http://127.0.0.1:5000
-2026-05-12 13:11:41  INFO      [33mPress CTRL+C to quit[0m
-2026-05-12 13:11:41  INFO       * Restarting with watchdog (windowsapi)
-2026-05-12 13:11:42  WARNING    * Debugger is active!
-2026-05-12 13:11:42  INFO       * Debugger PIN: 788-187-898
-2026-05-12 13:12:04  INFO      127.0.0.1 - - [12/May/2026 13:12:04] "GET /vulnerable HTTP/1.1" 200 -
-2026-05-12 13:12:08  INFO      127.0.0.1 - - [12/May/2026 13:12:08] "GET /vulnerable HTTP/1.1" 200 -
-2026-05-12 13:12:10  INFO      127.0.0.1 - - [12/May/2026 13:12:10] "GET /secure HTTP/1.1" 200 -
-2026-05-12 13:12:12  INFO      127.0.0.1 - - [12/May/2026 13:12:12] "GET / HTTP/1.1" 200 -
-2026-05-12 13:12:23  INFO      127.0.0.1 - - [12/May/2026 13:12:23] "GET / HTTP/1.1" 200 -
-2026-05-12 13:12:23  INFO      127.0.0.1 - - [12/May/2026 13:12:23] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-2026-05-12 13:12:35  INFO      127.0.0.1 - - [12/May/2026 13:12:35] "GET /secure HTTP/1.1" 200 -
-2026-05-12 13:12:36  INFO      127.0.0.1 - - [12/May/2026 13:12:36] "GET /vulnerable HTTP/1.1" 200 -
-2026-05-12 13:12:38  INFO      127.0.0.1 - - [12/May/2026 13:12:38] "GET / HTTP/1.1" 200 -
+2026-05-12 13:08:57  INFO      [33mPress CTRL+C to quit[0m
+2026-05-12 13:08:57  INFO       * Restarting with watchdog (windowsapi)
+2026-05-12 13:08:58  WARNING    * Debugger is active!
+2026-05-12 13:08:58  INFO       * Debugger PIN: 788-187-898
+2026-05-12 13:09:03  INFO      127.0.0.1 - - [12/May/2026 13:09:03] "GET / HTTP/1.1" 200 -
