@@ -1,81 +1,39 @@
-# Secure Coding Review Project
+# Flask Login Website
 
-Combined documentation for both parts of this project:
+This folder contains the web version of the login security demo.
 
-- CLI demos in `python/`
-- Flask website in `website/`
+## Files
 
-## Project structure
+- `app.py` - Flask application with vulnerable and secure routes
+- `templates/` - HTML templates for the site
 
-```text
-t3/
-├── python/
-│   ├── login_vulnerable.py
-│   ├── login_secure.py
-│   └── README.md
-├── website/
-│   ├── app.py
-│   ├── templates/
-│   └── README.md
-├── requirements.txt
-├── .env.example
-└── README.md
-```
+## How to run
 
-## One-time setup
-
-```bash
-pip install -r requirements.txt
-cp .env.example .env
-```
-
-## Run the website
+From the project root:
 
 ```bash
 python website/app.py
 ```
 
-Open these URLs:
+Then open:
 
-- `http://127.0.0.1:5000/`
-- `http://127.0.0.1:5000/vulnerable`
-- `http://127.0.0.1:5000/secure`
+- `http://127.0.0.1:5000/` - home page
+- `http://127.0.0.1:5000/vulnerable` - insecure demo
+- `http://127.0.0.1:5000/secure` - secure demo
 
-Stop with `Ctrl+C`.
+## Demo details
 
-## Run the Python CLI demos
-
-```bash
-python python/login_vulnerable.py
-python python/login_secure.py
-```
-
-## Vulnerability coverage
-
-The vulnerable flow demonstrates:
+The vulnerable route shows:
 
 - SQL injection
 - plain-text password storage
-- weak MD5 hashing
-- hardcoded secrets
-- verbose error leakage
-- sensitive data logging
+- MD5 hashing
+- verbose error messages
+- sensitive logging
 
-The secure flow demonstrates:
+The secure route uses:
 
-- parameterized SQL queries
-- bcrypt password hashing
-- environment-based configuration
+- parameterized queries
+- bcrypt hashing
 - input validation
 - generic error handling
-
-## Optional security scan
-
-```bash
-bandit -r python/login_vulnerable.py
-```
-
-## Folder-specific docs
-
-- `python/README.md`
-- `website/README.md`
